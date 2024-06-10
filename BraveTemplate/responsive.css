@@ -1,0 +1,182 @@
+@media screen and (max-width:992px) {
+    .navbar {
+        position: relative;
+        padding-left: 15px;
+    }
+    .navbar a{
+        color: black;
+    }
+    .navbar-nav {
+        display: block;
+        list-style: none;
+        width: 100%;
+    }
+    .navbar-nav ul li{
+        position: relative;;
+    }
+
+    .navbar .dropend a{
+        color: black;
+    }
+
+    .navbar a:hover{
+        background: none;
+    }
+
+    .navbar-nav .dropdown-menu {
+        position: relative !important;
+    } 
+}
+
+@media (max-width: 993px) {
+    .navbar-collapse{
+        height: auto;
+        /* position: fixed; */
+        /* top: 0;
+        right: 0;
+        left: 0; */
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        transition: top 1s ease;
+        display: none;
+        
+    }
+
+    nav .closeMenu{
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    .navbar .openMenu{
+        display: block;
+    }
+
+    .navbar-collapse  .navbar-nav li a:hover {
+        background: none;
+        
+    }
+    
+}
+
+@media screen and (max-width:699px) {
+
+  a.navbar-brand {
+    padding-left: 145px;
+  }
+
+    .dropdown-toggle::after {
+        display: inline-block;
+        margin-left: 0;
+        vertical-align: 0;
+        content: "+";
+        border:0 !important;
+    }
+
+    .dropend .dropdown-toggle::after{
+        display: inline-block;
+        margin-left: 0;
+        vertical-align: 0;
+        content: "+";
+        border:0 !important;
+
+        
+    }
+    .dropdown-menu{
+        padding: 0;
+        margin: 0;
+        border-top: none !important;
+
+    }
+    .navbar ul li>a{
+        display: block;
+        padding: 14px 15px;
+        font-size: 13px;
+
+    }
+
+    nav .openMenu{
+        margin: 5px 20px;
+    }
+    .navbar .container{
+        padding: 0;
+    }
+    .navbar a{
+        padding-top: 0;
+    }
+    
+    .dropend:hover > .dropdown-menu {
+        position: relative;
+        left: 0;
+        top: 0;
+        margin-top: 0;
+    }
+
+    .mega-menu{
+        padding: 0;
+    }
+    .mega-menu ul{
+        display: block;
+    }
+
+
+    .components-menu ul {
+        display: block;
+    }
+
+    .radial-bars{
+        display: block;
+    }
+
+    .order-lg-2{
+        display: none;
+    }
+
+    .card-app-first , .card-app-second {
+        text-align: center;
+    }
+    
+    .card-app-third , .card-app-fourth {
+        text-align: center;
+    }
+
+}
+
+@media screen and (min-width:993px) {
+    .dropdown:hover  .mega-menu{
+        display: flex;
+    }
+    .mega-menu.show{
+        display: flex;
+    }
+    
+}
+
+@media screen and (max-width:992px) {
+    .mega-menu.show{
+        max-height: 350px;;
+        overflow-y: scroll;
+        
+    }
+    .components-menu.show{
+        max-height: 60vh;
+        overflow-y: scroll;
+    }
+}
+
+@media screen and (min-width:993px) {
+    .dropdown:hover  .components-menu{
+        display: flex;
+    }
+    .mega-menu.show{
+        display: flex;
+    }
+    
+}
+
+
+
